@@ -67,4 +67,6 @@ class MainTestCase(TestCase):
         self.userGraph = self.main.buildGraph(self.nodes)
         res = self.main.get_top_matches(self.userGraph, self.users[1]["name"], self.nodes, 2)
         print(res)
+        self.assertEqual(len(res), 2)
+        self.assertListEqual(res, ['UserA', 'UserD'])
         print("top matches test case executed successfully")
