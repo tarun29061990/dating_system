@@ -26,6 +26,11 @@ Test cases are located in tests folder.
 In order to run the test cases simply type:
 
     python tests/runner.py
+    
+    
+### Optimisations
+
+For optimisation we can consider putting all the data to elastic search/ some graph Database. Querying will be fast and later we can run some machine learning algorithms for better recommendation.
 
 ### Project Structure and Logic
 
