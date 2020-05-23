@@ -29,7 +29,7 @@ In order to run the test cases simply type:
 
 ### Project Structure and Logic
 
-The whole code lies in the src folder. Two files handle all the code
+The whole code lies in the src folder.
 1. main.py - This is the main starting file of the application. It register users, create a user graph and sort the edges based on parameters.
 
 2. user.py - This is a user class which handles user registration.
