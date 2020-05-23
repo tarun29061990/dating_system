@@ -28,7 +28,7 @@ In order to run the test cases simply type:
     python tests/runner.py
     
     
-### Optimisations
+### Optimizations
 
 For optimisation we can consider putting all the data to elastic search/ some graph Database. Querying will be fast and later we can run some machine learning algorithms for better recommendation.
 
