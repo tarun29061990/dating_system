@@ -58,9 +58,10 @@ class MainTestCase(TestCase):
         print("Register users test case executed successfully", end='\n\n')
 
     def test_build_graph(self):
+        self.nodes = self.main.registerUsers(self.users)
         self.userGraph = self.main.buildGraph(self.nodes)
         self.assertEqual(len(self.userGraph), len(self.nodes))
-        print("build graph test case executed successfully")
+        print("build graph test case executed successfully", end='\n\n')
 
     def test_top_matches(self):
         self.nodes = self.main.registerUsers(self.users)
@@ -69,4 +70,4 @@ class MainTestCase(TestCase):
         print(res)
         self.assertEqual(len(res), 2)
         self.assertListEqual(res, ['UserA', 'UserD'])
-        print("top matches test case executed successfully")
+        print("top matches test case executed successfully", end='\n\n')
